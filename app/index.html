@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>calc</title>
+</head>
+<style>
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .display {
+    text-align: right;
+  }
+
+  .calc {
+    width: 300px;
+  }
+
+  .calc .buttons-wrap {
+    display: flex;
+    width: 100%;
+  }
+
+  .calc .buttons-wrap .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .calc .buttons-wrap .buttons2 {
+    display: flex;
+    flex-direction: column;
+  }
+</style>
+
+<body>
+  <div class="calc">
+    <input type="text" class="display" readonly />
+    <div class="buttons-wrap">
+      <div class="buttons">
+        <button data-method="clean">AC</button>
+        <button data-method="backspace">&larr;</button>
+        <button data-method="toggle">&plusmn;</button>
+        <button data-method="percent">%</button>
+
+        <button data-number="7">7</button>
+        <button data-number="8">8</button>
+        <button data-number="9">9</button>
+        <button data-method="divide">&divide;</button>
+
+        <button data-number="4">4</button>
+        <button data-number="5">5</button>
+        <button data-number="6">6</button>
+        <button data-method="multiply">&times;</button>
+
+        <button data-number="1">1</button>
+        <button data-number="2">2</button>
+        <button data-number="3">3</button>
+        <button data-method="subtract">-</button>
+
+        <button data-number="0">0</button>
+        <button data-number="dot">.</button>
+        <button data-method="equals">=</button>
+        <button data-method="add">+</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./js/main.js"></script>
+</html>
