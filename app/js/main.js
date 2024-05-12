@@ -1,6 +1,6 @@
 "use strict";
 
-const buttons = document.querySelector(".buttons-wrap");
+const buttons = document.querySelector(".buttons");
 const buttonsNumbers = [...document.querySelectorAll("[data-number]")];
 const buttonsMethods = [...document.querySelectorAll("[data-method]")];
 const display = document.querySelector(".display");
