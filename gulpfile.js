@@ -7,6 +7,7 @@ const uglify = require("gulp-uglify-es").default;
 const autoprefixer = require("gulp-autoprefixer");
 const imagemin = require("gulp-imagemin");
 const del = require("del");
+const ghPages = require("gh-pages");
 
 function browsersync() {
   browserSync.init({
@@ -83,7 +84,7 @@ function watching() {
 function deploy() {
   return ghPages.publish('dist', {
     branch: 'gh-pages',
-  //   repo: 'https://github.com/tgluk/gulp-start.git',
+    repo: 'https://github.com/timgluk/calculator.git',
     dotfiles: true
   });
 }
