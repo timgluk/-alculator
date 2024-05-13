@@ -56,6 +56,7 @@ buttons.addEventListener("click", function (event) {
   }
 
   if (keyMethod === "equals") {
+    if (numberA === "" && numberB === "" && sign === "" && !equals) return
     equals = true;
     switch (sign) {
       case "/":

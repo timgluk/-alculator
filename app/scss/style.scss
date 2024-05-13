@@ -32,14 +32,19 @@ body {
     font-size: 48px;
     font-weight: 100;
     padding-right: 15px;
-
     box-sizing: border-box;
+    cursor: default;
+    &:active,
+    &:focus,
+    &:focus-visible {
+      border: none;
+      outline: none;
+    }
   }
 
   .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    // grid-template-columns: repeat(4, 25%);
     width: 100%;
     border-radius: 7px;
     gap: 1px;
@@ -50,7 +55,6 @@ body {
       font-size: 20px;
       padding: 7px 0;
       cursor: pointer;
-      // aspect-ratio: 4/3;
     }
 
     [data-method] {
